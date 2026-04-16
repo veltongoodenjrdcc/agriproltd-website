@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agriproltd.com/sitemap.xml
+Sitemap: https://veltongoodenjrdcc.github.io/agriproltd-website/sitemap.xml

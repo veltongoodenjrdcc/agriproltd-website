@@ -407,14 +407,14 @@ em { font-style: italic; }
   background-position: center;
   opacity: 0;
 }
-.hero__slide:nth-child(1) { background-image: url('/assets/images/472835831_122132964092427004_7644986744515386914_n.jpg'); }
-.hero__slide:nth-child(2) { background-image: url('/assets/images/471230427_122130864140427004_5197306397826040551_n.jpg'); }
+.hero__slide:nth-child(1) { background-image: url('../images/472835831_122132964092427004_7644986744515386914_n.jpg'); }
+.hero__slide:nth-child(2) { background-image: url('../images/471230427_122130864140427004_5197306397826040551_n.jpg'); }
 .hero__slide:nth-child(3) {
-  background-image: url('/assets/images/473368830_122133693830427004_603165284775424494_n.jpg');
+  background-image: url('../images/473368830_122133693830427004_603165284775424494_n.jpg');
   background-position: center 18%;
 }
 .hero__slide:nth-child(4) {
-  background-image: url('/assets/images/agripro_ltd_DEN6FFySe5W.jpg');
+  background-image: url('../images/agripro_ltd_DEN6FFySe5W.jpg');
   background-position: center 16%;
 }
 
