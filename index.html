@@ -31,11 +31,11 @@
   <link rel="icon"             type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon"                  href="assets/images/favicon.png">
 
-  <!-- Google Fonts: Fraunces + DM Sans (modern-minimal pairing) -->
+  <!-- Google Fonts: DM Serif Display + DM Sans (modern-minimal pairing) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=DM+Sans:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet"         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=DM+Sans:wght@300;400;500;600&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap">
+  <link rel="stylesheet"         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap">
 
   <!-- Font Awesome (free tier only) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -152,17 +152,19 @@
       <div class="nav__inner">
 
         <!-- Logo -->
-        <a href="./" class="nav__logo" aria-label="AgriPro home">
+        <a href="./" class="nav__logo" aria-label="Agricultural Professionals Ltd. home">
           <img src="assets/images/logo-horizontal.png"
                alt=""
                class="nav__logo-image"
                width="6008" height="1472">
+          <span class="nav__logo-subtext">Agricultural Professionals Ltd.</span>
         </a>
 
         <!-- Desktop nav links -->
         <nav class="nav__links" aria-label="Main navigation">
           <a href="#about"    class="nav__link" data-nav-link aria-current="false">About</a>
           <a href="#crop"     class="nav__link" data-nav-link aria-current="false">Our Crop</a>
+          <a href="#cradle-to-grave" class="nav__link" data-nav-link aria-current="false">Journey</a>
           <a href="#mission"  class="nav__link" data-nav-link aria-current="false">Mission</a>
           <a href="#projects" class="nav__link" data-nav-link aria-current="false">Projects</a>
           <a href="#faq"      class="nav__link" data-nav-link aria-current="false">FAQ</a>
@@ -195,6 +197,7 @@
     <nav class="nav__mobile-links">
       <a href="#about"    class="nav__mobile-link" data-nav-link aria-current="false">About AgriPro</a>
       <a href="#crop"     class="nav__mobile-link" data-nav-link aria-current="false">Our Crop</a>
+      <a href="#cradle-to-grave" class="nav__mobile-link" data-nav-link aria-current="false">Cradle to Grave</a>
       <a href="#mission"  class="nav__mobile-link" data-nav-link aria-current="false">Mission &amp; Vision</a>
       <a href="#projects" class="nav__mobile-link" data-nav-link aria-current="false">Future Projects</a>
       <a href="#faq"      class="nav__mobile-link" data-nav-link aria-current="false">FAQ</a>
@@ -237,7 +240,10 @@
 
             <!-- Main headline -->
             <div class="hero__main">
-              <p class="eyebrow hero__eyebrow">Agricultural Professionals Ltd. | Kingston, Jamaica</p>
+              <div class="hero__brand">
+                <p class="eyebrow hero__eyebrow">Agricultural Professionals Ltd. | Kingston, Jamaica</p>
+                <p class="hero__brand-name">Agri Pro<sup>&trade;</sup></p>
+              </div>
               <h1 class="hero__h1">
                 Cultivating Growth for <em>Jamaica</em> and Beyond
               </h1>
@@ -492,7 +498,7 @@
           <!-- Image column -->
           <div class="about__img-col reveal">
             <!-- PLACEHOLDER: swap for a client-supplied team or farm photo before launch -->
-            <img src="assets/images/471230427_122130864140427004_5197306397826040551_n.jpg"
+            <img src="assets/images/agripro_ltd_DEN6FFySe5W.jpg"
                  alt="AgriPro team members working in the field in Kingston, Jamaica"
                  class="about__img"
                  width="800" height="1000"
@@ -562,6 +568,64 @@
               <i class="fa-solid fa-envelope" aria-hidden="true"></i>
               Ask About Sourcing
             </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CRADLE TO GRAVE
+         ==================================================== -->
+    <section id="cradle-to-grave" aria-labelledby="cradle-heading">
+      <div class="container">
+        <div class="cradle__grid">
+
+          <div class="cradle__content">
+            <p class="eyebrow">Full-Chain Support</p>
+            <h2 id="cradle-heading" class="cradle__h2">
+              Cradle to Grave
+            </h2>
+            <p class="cradle__text">
+              AgriPro supports agriculture across the full journey, from the foundation of production to the systems, partnerships, and opportunities that help it grow. Our cradle to grave approach reflects a wider commitment to building lasting value throughout the agricultural chain.
+            </p>
+
+            <div class="cradle__areas" aria-label="Cradle to grave key areas">
+              <p class="cradle__areas-heading">Key Areas</p>
+              <ul class="cradle__area-list" role="list">
+                <li><i class="fa-solid fa-seedling" aria-hidden="true"></i><span>Seed Production</span></li>
+                <li><i class="fa-solid fa-warehouse" aria-hidden="true"></i><span>Seedling House</span></li>
+                <li><i class="fa-solid fa-pepper-hot" aria-hidden="true"></i><span>In-House Pepper Production</span></li>
+                <li><i class="fa-solid fa-handshake" aria-hidden="true"></i><span>Partner Farm Syndicate</span></li>
+                <li><i class="fa-solid fa-box-open" aria-hidden="true"></i><span>Value-Added</span></li>
+                <li><i class="fa-solid fa-tractor" aria-hidden="true"></i><span>Property Management Services</span></li>
+                <li><i class="fa-solid fa-globe" aria-hidden="true"></i><span>Export</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cradle__gallery" aria-label="Scotch Bonnet pepper production and harvest">
+            <figure class="cradle__image-wrap cradle__image-wrap--primary">
+              <img src="assets/images/cradle-to-grave-green-peppers.jpg"
+                   alt="Fresh green Scotch Bonnet peppers harvested in a green crate"
+                   class="cradle__image"
+                   width="3018" height="2958"
+                   loading="lazy">
+            </figure>
+            <figure class="cradle__image-wrap">
+              <img src="assets/images/cradle-to-grave-harvest-crates.jpg"
+                   alt="A ripe yellow Scotch Bonnet pepper held above harvest crates"
+                   class="cradle__image"
+                   width="4000" height="3000"
+                   loading="lazy">
+            </figure>
+            <figure class="cradle__image-wrap">
+              <img src="assets/images/cradle-to-grave-yellow-pepper.jpg"
+                   alt="A ripe yellow Scotch Bonnet pepper resting in a hand at the farm"
+                   class="cradle__image"
+                   width="4000" height="3000"
+                   loading="lazy">
+            </figure>
           </div>
 
         </div>
@@ -1027,6 +1091,7 @@
           <ul class="footer__links" role="list">
             <li><a href="#about"    class="footer__link">About AgriPro</a></li>
             <li><a href="#crop"     class="footer__link">Our Crop</a></li>
+            <li><a href="#cradle-to-grave" class="footer__link">Cradle to Grave</a></li>
             <li><a href="#mission"  class="footer__link">Mission &amp; Vision</a></li>
             <li><a href="#projects" class="footer__link">Future Projects</a></li>
             <li><a href="#faq"      class="footer__link">FAQ</a></li>
