@@ -1,5 +1,5 @@
 /* ============================================================
-   Agricultural Professionals Ltd. (AgriPro) - styles.css
+   Agricultural Professionals Ltd. - styles.css
    Font pairing: modern-minimal (DM Serif Display + DM Sans)
    Build: 2026-04-16
    ============================================================ */
@@ -75,7 +75,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -97,7 +97,7 @@ em { font-style: italic; }
 .eyebrow {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -262,16 +262,6 @@ em { font-style: italic; }
   object-fit: contain;
   transform: translateY(2px);
 }
-.nav__logo-subtext {
-  display: block;
-  color: var(--color-primary-deep);
-  font-size: clamp(0.58rem, 1.2vw, 0.7rem);
-  font-weight: 600;
-  line-height: 1.1;
-  margin-left: clamp(0.5rem, 1vw, 0.72rem);
-  white-space: nowrap;
-}
-
 /* Desktop links */
 .nav__links {
   display: none;
@@ -500,39 +490,12 @@ em { font-style: italic; }
 }
 
 /* Hero text */
-.hero__brand {
-  margin-bottom: 1rem;
-}
-.hero__eyebrow {
-  margin-bottom: 0.28rem;
-  color: var(--color-highlight);
-  font-size: clamp(0.82rem, 1.25vw, 0.95rem);
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
-}
-.hero__brand-name {
-  color: var(--color-highlight);
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 1.75vw, 1.28rem);
-  line-height: 1;
-  margin: 0;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.26);
-}
-.hero__brand-name sup {
-  font-family: var(--font-body);
-  font-size: 0.38em;
-  line-height: 0;
-  margin-left: 0.08em;
-  vertical-align: super;
-}
-
 .hero__h1 {
   color: #fff;
   margin-bottom: 1.25rem;
   max-width: 16ch;
 }
-.hero__h1 em { color: var(--color-highlight); font-style: italic; }
+.hero__h1 em { color: #fff; font-style: italic; }
 
 .hero__sub {
   color: rgba(255, 255, 255, 0.92);
@@ -834,7 +797,7 @@ em { font-style: italic; }
   .about__img-col { order: -1; }
 }
 
-.about__eyebrow { color: var(--color-highlight); }
+.about__eyebrow { color: rgba(255, 255, 255, 0.95); }
 .about__h2 { color: #fff; margin-bottom: 1.25rem; }
 .about__h2 em { color: var(--color-highlight); font-style: italic; }
 
@@ -1104,9 +1067,9 @@ em { font-style: italic; }
 }
 
 .mission__top {
-  text-align: center;
+  text-align: left;
   max-width: 640px;
-  margin: 0 auto 3.5rem;
+  margin: 0 0 3.5rem;
 }
 .mission__top .section-intro { margin-top: 0.875rem; color: var(--color-muted); }
 
@@ -1160,7 +1123,7 @@ em { font-style: italic; }
 
 /* Pillars */
 .pillars__heading {
-  text-align: center;
+  text-align: left;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -1172,7 +1135,7 @@ em { font-style: italic; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .pillar {
   display: flex;

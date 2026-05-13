@@ -1,5 +1,5 @@
 /* ============================================================
-   Agricultural Professionals Ltd. (AgriPro) - main.js
+   Agricultural Professionals Ltd. - main.js
    Handles: nav scroll, hamburger, active nav, reveal, float CTA
    ============================================================ */
 
