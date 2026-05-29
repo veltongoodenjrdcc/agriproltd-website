@@ -28,6 +28,7 @@
   --radius:        6px;
   --container-max: 1240px;
   --nav-height:    84px;
+  --section-scroll-offset: calc(var(--nav-height) + clamp(5rem, 18vh, 11rem));
 }
 
 /* ---- Reset ------------------------------------------------- */
@@ -36,6 +37,10 @@
 html {
   scroll-behavior: smooth;
   font-size: 100%;
+}
+
+main > section[id] {
+  scroll-margin-top: var(--section-scroll-offset);
 }
 
 body {
@@ -1054,30 +1059,30 @@ em { font-style: italic; }
 }
 
 /* ============================================================
-   MISSION / VISION / PILLARS
+   GOALS / VISION / PILLARS
    ============================================================ */
-#mission {
+#goals {
   padding: clamp(4.5rem, 9vw, 7rem) 0;
   background: var(--color-bone);
 }
 
-.mission__top {
+.goals__top {
   text-align: left;
   max-width: 640px;
   margin: 0 0 3.5rem;
 }
-.mission__top .section-intro { margin-top: 0.875rem; color: var(--color-muted); }
+.goals__top .section-intro { margin-top: 0.875rem; color: var(--color-muted); }
 
-.mission__blocks {
+.goals__blocks {
   display: grid;
   gap: 1.5rem;
   margin-bottom: 3.5rem;
 }
 @media (min-width: 768px) {
-  .mission__blocks { grid-template-columns: 1fr 1fr; }
+  .goals__blocks { grid-template-columns: 1fr 1fr; }
 }
 
-.mission-block {
+.goal-block {
   background: #fff;
   border-radius: var(--radius);
   padding: 2.25rem 2rem;
@@ -1085,7 +1090,7 @@ em { font-style: italic; }
   position: relative;
   overflow: hidden;
 }
-.mission-block::after {
+.goal-block::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1097,7 +1102,7 @@ em { font-style: italic; }
   transform: translate(35px, -35px);
   pointer-events: none;
 }
-.mission-block__eyebrow {
+.goal-block__eyebrow {
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -1105,12 +1110,12 @@ em { font-style: italic; }
   color: var(--color-highlight);
   margin-bottom: 0.5rem;
 }
-.mission-block__icon {
+.goal-block__icon {
   font-size: 1.5rem;
   color: var(--color-primary);
   margin-bottom: 0.875rem;
 }
-.mission-block__text {
+.goal-block__text {
   font-size: 0.975rem;
   color: var(--color-muted);
   line-height: 1.7;
@@ -1439,7 +1444,7 @@ em { font-style: italic; }
   text-align: center;
   position: relative;
   overflow: hidden;
-  scroll-margin-top: calc(var(--nav-height) - 0.75rem);
+  scroll-margin-top: var(--section-scroll-offset);
 }
 #final-cta::before {
   content: '';
@@ -1627,7 +1632,6 @@ em { font-style: italic; }
 .footer__tagline {
   font-family: var(--font-display);
   font-size: 0.875rem;
-  font-style: italic;
   color: var(--color-highlight);
   display: block;
   margin-bottom: 0.875rem;
