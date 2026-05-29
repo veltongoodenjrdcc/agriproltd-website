@@ -1,0 +1,18 @@
+.footer__credit {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer__credit span,
+.footer__credit a {
+  color: var(--color-highlight, currentColor);
+  font-weight: 700;
+}
+
+.footer__credit a {
+  text-decoration: none;
+}
+
+.footer__credit a:hover {
+  text-decoration: underline;
+}

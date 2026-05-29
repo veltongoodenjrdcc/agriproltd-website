@@ -28,7 +28,7 @@
   --radius:        6px;
   --container-max: 1240px;
   --nav-height:    84px;
-  --section-scroll-offset: calc(var(--nav-height) + clamp(5rem, 18vh, 11rem));
+  --section-scroll-offset: calc(var(--nav-height) + clamp(0.75rem, 2vw, 1.5rem));
 }
 
 /* ---- Reset ------------------------------------------------- */
@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 100%;
+  scroll-padding-top: var(--section-scroll-offset);
 }
 
 main > section[id] {
@@ -1712,6 +1713,18 @@ em { font-style: italic; }
 .footer__copy {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.65);
+}
+.footer__credit {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.footer__credit a {
+  color: var(--color-highlight);
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer__credit a:hover {
+  text-decoration: underline;
 }
 
 /* ============================================================
